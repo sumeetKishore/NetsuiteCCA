@@ -19,7 +19,7 @@
 ## Install
 
 ```sh
-npm install
+npm install netsuite-helper
 ```
 
 ## Run tests

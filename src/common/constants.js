@@ -2,15 +2,15 @@
     mod_types: "SL,MR,UE,CS,PL,RL,SD,WA,MU,BI",
     mod_defs: {
       SL: "Suitelet",
-      MR: "mapreduce",
-      UE: "userevents",
-      CS: "clientside",
-      PL: "portlet",
-      RL: "restlet",
-      SD: "scheduled",
-      WA: "workflowaction",
-      MU: "massupdate",
-      BI: "bundleinstall"
+      MR: "MapReduceScript",
+      UE: "UserEventScript",
+      CS: "ClientScript",
+      PL: "Portlet",
+      RL: "Restlet",
+      SD: "ScheduledScript",
+      WA: "WorkflowActionScript",
+      MU: "MassUpdateScript",
+      BI: "BundleInstallationScript"
     },
     mod_methods: {
       SL: ["onrequest"],

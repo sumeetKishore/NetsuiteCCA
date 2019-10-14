@@ -1,12 +1,14 @@
 const fs  = require('fs');
 const path = require('path');
 const cc = require('../common/consoleColors');
+const constants = require('../common/constants')
 class Factory_handler{
     constructor(directory, module_name,module_type){
         this.directory = directory;
         this.module_name = module_name;
         this.module_type = module_type;
-        this.factory_enum = {'SL':require('./Factories/SL_factory')}
+        this.factoryConfig = require('./Factory_Config/FactoryConfigsGen');
+        this.factory_enum = constants.mod_defs;
     }
     
 }
@@ -35,7 +37,7 @@ function checkIfDirectoryExist(directory,module_name){
             var err = new Error(`File type ${this.module_type} is not valid file type . Please select from valid script type.`);
             throw err;
         }else if (checkIfDirectoryExist(this.directory, this.module_name)){
-            var factory_object=new  this.factory_enum[this.module_type](this.directory, this.module_name, this.module_type);
+            var factory_object=new  this.factoryConfig(this.directory, this.module_name, this.module_type);
             factory_object.execute();
         }
     };

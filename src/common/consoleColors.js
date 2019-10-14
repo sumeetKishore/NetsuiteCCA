@@ -18,7 +18,7 @@ console_colors.FgWhite = "\x1b[37m"
 
 console_colors.BgBlack = "\x1b[40m"
 console_colors.error = '\x1b[31m%s\x1b[0m'
-console_colors.Info = '\x1b[32m%s\x1b[0m'
+console_colors.info = '\x1b[32m%s\x1b[0m'
 console_colors.warning = '\x1b[33m%s\x1b[0m'
 console_colors.log = "\x1b[34m%s\x1b[0m"
 console_colors.BgMagenta = "\x1b[45m"

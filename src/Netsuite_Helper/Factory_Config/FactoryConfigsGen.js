@@ -1,6 +1,9 @@
 var cc = require('../../common/consoleColors');
 var constants = require('../../common/constants');
 var main = require('../factory_main/Create_Main');
+var gateway = require('../factory_gateway/Create_Gateway');
+var controller = require('../factory_controller/Create_Controller');
+var usecase = require('../factory_usecase/Create_Usecase');
 var path = require('path');
 class SL_Factory{
     constructor(directory, module_name, module_type){
@@ -13,9 +16,17 @@ class SL_Factory{
    }
    
    create_SL_files(){
-       console.log(cc.log, 'Creating main file.')
         var main_files = new main(this.directory,this.module_name, this.module_type);
         main_files.execute();
+        
+        var controller_files = new controller(this.directory,this.module_name, this.module_type);
+        controller_files.execute();
+        
+        var usecase_files = new usecase(this.directory,this.module_name, this.module_type);
+        usecase_files.execute();
+        
+        var gateway_file = new gateway(this.directory,this.module_name, this.module_type);
+        gateway_file.execute();
    }
 }
 
