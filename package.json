@@ -1,13 +1,10 @@
 {
-  "name": "netsuite-cca",
-  "version": "1.0.0",
-  "description": "clean code architecture generator for netuite modules",
-  "main": "index.js",
+  "name": "netsuite-helper",
+  "version": "0.1.0",
+  "description": "cli tool for netsuite helper",
+  "main": "src/cli.js",
   "scripts": {
-    "test": "mocha --reporter spec"
-  },
-  "engines": {
-    "node": ">=4.2.4"
+    "test": "test"
   },
   "repository": {
     "type": "git",
@@ -15,9 +12,8 @@
   },
   "keywords": [
     "netsuite",
-    "cca",
-    "netsuite",
-    "helper"
+    "netsuite-helper",
+    "netsuite-autocomplete"
   ],
   "author": "Sumeet kishore <Sumeetkishore@gmail.com>",
   "license": "MIT",
@@ -25,8 +21,7 @@
     "url": "https://github.com/sumeetKishore/NetsuiteCCA/issues"
   },
   "homepage": "https://github.com/sumeetKishore/NetsuiteCCA#readme",
-  "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.1"
+  "bin": {
+    "nsgen": "src/cli.js"
   }
 }
