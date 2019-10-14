@@ -19,7 +19,7 @@
 ## Install
 
 ```sh
-npm install netsuite-helper
+npm install -g netsuite-helper
 ```
 
 ## Run tests
@@ -43,7 +43,7 @@ Enter the command following by module Name (e.g Sales Order). and Module Type (e
 <table style="width:100%">
   <tr>
     <th>Script Name</th>
-    <th>Scripte pnemonic</th>
+    <th>Script pnemonic</th>
     <th>Methods</th>
   </tr>
  <tr>
@@ -103,6 +103,10 @@ Enter the command following by module Name (e.g Sales Order). and Module Type (e
 👤 **Sumeet kishore <Sumeetkishore@gmail.com>**
 
 - Github: [@sumeetKishore](https://github.com/sumeetKishore)
+
+## Versioning
+
+We use [SemVer](https://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/sumeetKishore/NetsuiteCCA/tags).
 
 ## 🤝 Contributing
 
