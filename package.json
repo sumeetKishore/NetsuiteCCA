@@ -23,5 +23,8 @@
   "homepage": "https://github.com/sumeetKishore/NetsuiteCCA#readme",
   "bin": {
     "nsgen": "src/cli.js"
+  },
+  "dependencies": {
+    "commander": "^3.0.2"
   }
 }

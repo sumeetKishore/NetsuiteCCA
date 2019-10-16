@@ -38,7 +38,14 @@ nsgen <Module Name> <Module Type>
 
 To run the Netsuite helper use above mentioned command .
 Make sure to navigate (cd) to correct destination on terminal / shell/ command prompt.
-Enter the command following by module Name (e.g Sales Order). and Module Type (e.g CS for ClientScript)
+Enter the command following by module Name (e.g Sales Order). and Module Type (e.g CS for ClientScript).
+Files will be created as per Clean code Architecture.
+
+Example :
+
+```
+nsgen 'Route Delivery' SL
+```
 
 <table style="width:100%">
   <tr>
