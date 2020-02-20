@@ -5,7 +5,7 @@ var console_colors = require("./common/consoleColors");
 const program = require("commander");
 const constants = require("./common/constants");
 program.name("netsuite-helper");
-program.version("0.1.0");
+program.version("0.2.0");
 program.usage("nsgen <module-name> <module-type");
 program.on("--help", function() {
   console.log("");
