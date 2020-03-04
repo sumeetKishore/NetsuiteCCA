@@ -1,9 +1,11 @@
 var cc = require("../../common/consoleColors");
 var constants = require("../../common/constants");
+var initProject = require("../factory_InitProject/Init_Project");
 var main = require("../factory_main/Create_Main");
 var gateway = require("../factory_gateway/Create_Gateway");
 var controller = require("../factory_controller/Create_Controller");
 var usecase = require("../factory_usecase/Create_Usecase");
+
 var constantFile = require("../factory_constants/Create_constants");
 var path = require("path");
 class SL_Factory {
@@ -13,7 +15,15 @@ class SL_Factory {
     this.module_type = module_type;
   }
   execute() {
+    if(this.module_name  === constants.COMMAND_INIT)
+      this.initProject(this.module_type);
+    else
     this.create_SL_files();
+  }
+
+  initProject(){
+    var init_project= new initProject(this.directory,this.module_type);
+    init_project.execute();
   }
 
   create_SL_files() {

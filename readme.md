@@ -1,6 +1,6 @@
 <h1 align="center">Welcome to netsuite-helper 👋</h1>
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <img alt="Version" src="https://img.shields.io/badge/version-0.2.0-blue.svg?cacheSeconds=2592000" />
   <a href="https://github.com/sumeetKishore/NetsuiteCCA#readme" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
@@ -29,7 +29,25 @@ npm run test
 ```
 
 ## Terminal Command
+### Initialize Project
 
+```sh js
+nsgen init <project name>
+```
+
+Create the Scaffold strucutre for your project.
+```bash
+D:.
+└───FileCabinet
+    └───SuiteApps
+        ├───com.netsuite.example
+        │   ├───src
+        │   └───test
+        │       └───jasmine
+        │           └───unit
+        │               └───specs
+``` 
+### Create Module
 ```sh
 nsgen <Module Name> <Module Type>
 ```
@@ -42,6 +60,11 @@ Enter the command following by module Name (e.g Sales Order). and Module Type (e
 Files will be created as per Clean code Architecture.
 
 Example :
+
+```
+nsgen init "com.netsuite.example"
+```
+Creates project with structure
 
 ```
 nsgen 'Route Delivery' SL

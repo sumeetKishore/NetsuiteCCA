@@ -33,6 +33,12 @@ function checkIfDirectoryExist(directory,module_name){
 
 }
     Factory_handler.prototype.execute = function(){
+        console.log(`${this.module_name}   ${this.module_type}`);
+        if(this.module_name === constants.COMMAND_INIT){
+            var factory_object=new  this.factoryConfig(this.directory,this.module_name, this.module_type);
+            factory_object.execute();
+            return;
+        }
         if(!this.factory_enum[this.module_type]){
             var err = new Error(`File type ${this.module_type} is not valid file type . Please select from valid script type.`);
             throw err;

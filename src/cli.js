@@ -37,7 +37,8 @@ var execute = () => {
   if (args.length === 2) {
     console.log(console_colors.info, "SuiteNess : started !!!");
     main_index(process.cwd(), args[0], args[1]);
-    console.log(console_colors.info, "Suiteness : Successfully executed !!!");
+  }else if(args.length === 1 && args[0] === constants.COMMAND_INIT){
+    main_index(process.cwd(), args[0]);
   } else {
     program.parse(process.argv);
     console.log(console_colors.error, "Invalid Params.\nPlease refer help.\n");
@@ -46,5 +47,6 @@ var execute = () => {
       "Help : nsgen --help.\nVersion : nsgen --version.\n"
     );
   }
+  console.log(console_colors.info, "Suiteness : Successfully executed !!!");
 };
 execute();

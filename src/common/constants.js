@@ -23,7 +23,8 @@
       WA: ["onAction"],
       MU: ["each"],
       BI: ["beforeUpdate","beforeInstall"]
-    }
+    },
+    COMMAND_INIT:'init'
   };
 module.exports = constant;
 
