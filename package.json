@@ -1,6 +1,6 @@
 {
   "name": "netsuite-helper",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "cli tool for netsuite helper",
   "main": "src/cli.js",
   "scripts": {
@@ -23,5 +23,8 @@
   "homepage": "https://github.com/sumeetKishore/NetsuiteCCA#readme",
   "bin": {
     "nsgen": "src/cli.js"
+  },
+  "dependencies": {
+    "commander": "^3.0.2"
   }
 }
